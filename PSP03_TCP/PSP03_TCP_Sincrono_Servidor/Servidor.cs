@@ -84,6 +84,7 @@ class MyTcpListener
             this.sw.Close();
             this.str.Close();
             this.client.Close();
+            this.server.Stop();
             Console.WriteLine("Todas las conexiones cerradas");
         }
         catch (Exception e)
